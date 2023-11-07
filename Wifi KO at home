@@ -7,27 +7,22 @@ automations:
   starters:
     - type: device.state.Online
       state: online
-      # [available operators: is, isNot]
       is: false
       device: salón salida - 2 Luces del salón
     - type: device.state.Online
       state: online
-      # [available operators: is, isNot]
       is: false
       device: salón - 2 Luces del salón
     - type: device.state.Online
       state: online
-      # [available operators: is, isNot]
       is: false
       device: Bocina escalera - Entrada casa
     - type: device.state.Online
       state: online
-      # [available operators: is, isNot]
       is: false
       device: comedor - 2 Luces del salón
     - type: device.state.Online
       state: online
-      # [available operators: is, isNot]
       is: false
       device: Home salón - 3 TV y Multimedia
 
@@ -38,34 +33,29 @@ automations:
     conditions:
       - type: device.state.Online
         state: online
-        # [available operators: is, isNot]
         is: false
         device: salón salida - 2 Luces del salón
       - type: device.state.Online
         state: online
-        # [available operators: is, isNot]
         is: false
         device: salón - 2 Luces del salón
       - type: device.state.Online
         state: online
-        # [available operators: is, isNot]
         is: false
         device: Bocina escalera - Entrada casa
       - type: device.state.Online
         state: online
-        # [available operators: is, isNot]
         is: false
         device: comedor - 2 Luces del salón
       - type: device.state.Online
         state: online
-        # [available operators: is, isNot]
         is: false
         device: Home salón - 3 TV y Multimedia
   
   
   
   actions:
-    - type: home.command.Notification # Send a notification to the specified home members.
+    - type: home.command.Notification 
       
       title: WARNING WIFI KO.
       body: caida total varios dispositivos.
